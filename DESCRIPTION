@@ -1,0 +1,13 @@
+Package: spatial
+Type: Package
+Title: Spatial components for ggplot2
+Version: 0.0.0
+Author: Hadley Wickham <h.wickham@gmail.com>
+Maintainer: Hadley Wickham <h.wickham@gmail.com>
+Description:
+Imports: ggplot2, mapproj, maps, gpclib, maptools, sp
+Enhances: fortify
+License: MIT
+LazyLoad: false
+Collate: 'coord-map.r' 'fortify-map.r' 'fortify-spatial.r'
+    'layers.r'

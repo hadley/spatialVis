@@ -1,0 +1,8 @@
+S3method(fortify, map)
+S3method(fortify, SpatialPolygons)
+S3method(fortify, Polygons)
+S3method(fortify, Polygon)
+S3method(fortify, SpatialLinesDataFrame)
+S3method(fortify, Lines)
+S3method(fortify, Line)
+export(borders)
