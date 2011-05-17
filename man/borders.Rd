@@ -12,7 +12,7 @@
   \item{regions}{map region}
   \item{fill}{fill colour}
   \item{colour}{border colour}
-  \item{...}{other arguments passed onto \code{\link[ggplot2]{polygon}}}
+  \item{...}{other arguments passed onto \code{\link[ggplot2]{geom_polygon}}}
 }
 \examples{require("maps")
 require("ggplot2")

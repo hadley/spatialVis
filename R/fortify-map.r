@@ -5,7 +5,7 @@
 #' 
 #' @method fortify map
 #' @S3method fortify map
-#' @seealso \code{\link{map_data}} and \code{\link{border}}
+#' @seealso \code{\link{map_data}} and \code{\link{borders}}
 #' @param model map object
 #' @param data not used by this method
 #' @param ... not used by this method
@@ -35,13 +35,13 @@ fortify.map <- function(model, data, ...) {
 
 #' Create a data frame of map data.
 #' 
-#' @param map name of map provided by \code{\link{maps}} package.  These 
+#' @param map name of map provided by \code{maps} package.  These 
 #'   include \code{\link{county}}, \code{\link{france}}, \code{\link{italy}},
 #'   \code{\link{nz}}, \code{\link{state}}, \code{\link{usa}}, 
 #'   \code{\link{world}}, \code{\link{world2}}.
 #' @param region name of subregions to include.  Defaults to \code{.} which
-#'   includes all subregion.  See documentation for \code{\link{map}} for
-#'   more details.
+#'   includes all subregion.  See documentation for \code{\link[maps]{map}}
+#'   for more details.
 #' @param exact should the \code{region} be treated as a regular expression
 #'   (\code{FALSE}) or as a fixed string (\code{TRUE}).
 #' @export

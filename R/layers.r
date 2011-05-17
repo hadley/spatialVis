@@ -4,7 +4,7 @@
 #' @param regions map region
 #' @param fill fill colour
 #' @param colour border colour
-#' @param ... other arguments passed onto \code{\link[ggplot2]{polygon}}
+#' @param ... other arguments passed onto \code{\link[ggplot2]{geom_polygon}}
 #' @export
 #' @examples
 #' require("maps")

@@ -11,7 +11,7 @@
   This function turns a map into a data frame than can more
   easily be plotted with ggplot2.
 }
-\seealso{\code{\link{map_data}} and \code{\link{border}}}
+\seealso{\code{\link{map_data}} and \code{\link{borders}}}
 \arguments{
   \item{model}{map object}
   \item{data}{not used by this method}
