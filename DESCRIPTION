@@ -5,9 +5,18 @@ Version: 0.0.0
 Author: Hadley Wickham <h.wickham@gmail.com>
 Maintainer: Hadley Wickham <h.wickham@gmail.com>
 Description:
-Imports: ggplot2, mapproj, maps, gpclib, maptools, sp
+Imports:
+    ggplot2,
+    mapproj,
+    maps,
+    gpclib,
+    maptools,
+    sp
 Enhances: fortify
 License: MIT
 LazyLoad: false
-Collate: 'coord-map.r' 'fortify-map.r' 'fortify-spatial.r'
+Collate:
+    'coord-map.r'
+    'fortify-map.r'
+    'fortify-spatial.r'
     'layers.r'
