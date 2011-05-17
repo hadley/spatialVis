@@ -30,7 +30,6 @@ fortify.SpatialPolygonsDataFrame <- function(model, data, region = NULL, ...) {
   cp <- polygons(model)
   
   # Union together all polygons that make up a region
-  try_require(c("gpclib", "maptools"))
   unioned <- unionSpatialPolygons(cp, invert(polys))
   
   coords <- fortify(unioned)

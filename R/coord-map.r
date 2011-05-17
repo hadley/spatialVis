@@ -47,7 +47,6 @@ CoordMap <- proto(Coord, {
   objname <- "map"
 
   new <- function(., projection="mercator", ..., orientation = NULL, xlim = NULL, ylim = NULL) {    
-    try_require("mapproj")
     .$proto(
       projection = projection, 
       orientation = orientation,

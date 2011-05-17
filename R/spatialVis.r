@@ -3,5 +3,5 @@
 #' @name spatialVis
 #' @docType package
 #' @aliases spatialVis package-spatialVis
-#' @import ggplot2
+#' @import ggplot2 maptools
 NULL

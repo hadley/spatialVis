@@ -6,14 +6,17 @@ Author: Hadley Wickham <h.wickham@gmail.com>
 Maintainer: Hadley Wickham <h.wickham@gmail.com>
 Description:
 Depends:
-    proto
+    proto,
+    mapproj
 Imports:
     ggplot2,
-    mapproj,
-    maps,
     gpclib,
     maptools,
     sp
+Suggests:
+    gpclib,
+    maps,
+    rgeos
 License: MIT
 LazyLoad: false
 Collate:
