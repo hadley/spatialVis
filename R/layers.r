@@ -7,6 +7,9 @@
 #' @param ... other arguments passed onto \code{\link[ggplot2]{polygon}}
 #' @export
 #' @examples
+#' require("maps")
+#' require("ggplot2")
+#'
 #' ia <- map_data("county", "iowa")
 #' mid_range <- function(x) mean(range(x))
 #' seats <- ddply(ia, .(subregion), colwise(mid_range, .(lat, long)))

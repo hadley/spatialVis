@@ -14,7 +14,10 @@
   \item{colour}{border colour}
   \item{...}{other arguments passed onto \code{\link[ggplot2]{polygon}}}
 }
-\examples{ia <- map_data("county", "iowa")
+\examples{require("maps")
+require("ggplot2")
+
+ia <- map_data("county", "iowa")
 mid_range <- function(x) mean(range(x))
 seats <- ddply(ia, .(subregion), colwise(mid_range, .(lat, long)))
 ggplot(ia, aes(long, lat)) + 

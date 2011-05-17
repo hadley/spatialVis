@@ -17,7 +17,9 @@
   \item{data}{not used by this method}
   \item{...}{not used by this method}
 }
-\examples{if (require("maps")) {
+\examples{require("maps")
+require("ggplot2")
+
 ca <- map("county", "ca", plot = FALSE, fill = TRUE)
 head(fortify(ca))
 qplot(long, lat, data = ca, geom = "polygon", group = group)
@@ -25,5 +27,4 @@ qplot(long, lat, data = ca, geom = "polygon", group = group)
 tx <- map("county", "texas", plot = FALSE, fill = TRUE)
 head(fortify(tx))
 qplot(long, lat, data = tx, geom = "polygon", group = group, 
-colour = I("white"))
-}}
+colour = I("white"))}

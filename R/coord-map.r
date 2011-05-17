@@ -18,7 +18,9 @@
 #' @param ylim manually specific y limits (in degrees of latitude)
 #' @export
 #' @examples
-#' if (require("maps")) {
+#' require("ggplot2")
+#' require("maps")
+#'
 #' # Create a lat-long dataframe from the maps package
 #' nz <- data.frame(map("nz", plot=FALSE)[c("x","y")])
 #' (nzmap <- qplot(x, y, data=nz, geom="path"))
@@ -41,7 +43,6 @@
 #' usamap + coord_map(project="stereographic")
 #' usamap + coord_map(project="conic", lat0 = 30)
 #' usamap + coord_map(project="bonne", lat0 = 50)
-#' }
 CoordMap <- proto(Coord, {  
   objname <- "map"
 
@@ -173,3 +174,9 @@ CoordMap <- proto(Coord, {
     linesGrob(nz$x, nz$y, default.units="npc")
   }
 })
+
+
+coord_map <- function (projection = "mercator", orientation = NULL, xlim = NULL,  ylim = NULL, ...) {
+  CoordMap$new(projection = projection, orientation = orientation, 
+      xlim = xlim, ylim = ylim, ...)  
+}
